@@ -1,0 +1,98 @@
+.amount {
+    width: 25px;
+    height: 12px;
+    background-color: red;
+    border-radius: 5px;
+    z-index: 4;
+}
+
+.amount_ {
+    width: 17px;
+    height: 12px;
+    background-color: red;
+    border-radius: 5px;
+    z-index: 4;
+}
+
+.amount__ {
+    width: 11px;
+    height: 12px;
+    background-color: red;
+    border-radius: 5px;
+    z-index: 4;
+}
+
+#pos1 {
+    position: absolute;
+    top: 265px;
+    left: 34px;
+    background-position-x: 0px;
+}
+
+.a_100 {
+    position: absolute;
+    top: 261px;
+    left: 36.7px;
+    background-position-x: 0px;
+    z-index: 5;
+}
+
+#pos2 {
+    position: absolute;
+    top: 265px;
+    left: 203px;
+    background-position-x: 0px;
+}
+
+.a_11 {
+    position: absolute;
+    top: 261px;
+    left: 205px;
+    background-position-x: 0px;
+    z-index: 5;
+}
+
+#pos3 {
+    position: absolute;
+    top: 342px;
+    left: 88px;
+    background-position-x: 0px;
+}
+
+.a_461 {
+    position: absolute;
+    top: 338px;
+    left: 91px;
+    background-position-x: 0px;
+    z-index: 5;
+}
+
+#pos4 {
+    position: absolute;
+    top: 342px;
+    left: 206px;
+    background-position-x: 0px;
+}
+
+.a_2 {
+    position: absolute;
+    top: 338px;
+    left: 208px;
+    background-position-x: 0px;
+    z-index: 5;
+}
+
+#pos5 {
+    position: absolute;
+    top: 433px;
+    left: 142px;
+    background-position-x: 0px;
+}
+
+.a_141 {
+    position: absolute;
+    top: 429px;
+    left: 145px;
+    background-position-x: 0px;
+    z-index: 5;
+}
