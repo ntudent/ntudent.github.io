@@ -1,0 +1,47 @@
+.settings {
+    position: absolute;
+    top: 193px;
+    left: 127px;
+    background-position-x: 0px;
+    z-index: 3;
+}
+
+.calendar {
+    position: absolute;
+    top: 347px;
+    left: 19px;
+    background-position-x: 0px;
+    z-index: 3;
+}
+
+.phone {
+    position: absolute;
+    top: 438px;
+    left: 19px;
+    background-position-x: 0px;
+    z-index: 3;
+}
+
+.contact {
+    position: absolute;
+    top: 438px;
+    left: 73px;
+    background-position-x: 0px;
+    z-index: 3;
+}
+
+.messages {
+    position: absolute;
+    top: 438px;
+    left: 127px;
+    background-position-x: 0px;
+    z-index: 3;
+}
+
+.camera {
+    position: absolute;
+    top: 438px;
+    left: 231px;
+    background-position-x: 0px;
+    z-index: 3;
+}
