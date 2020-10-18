@@ -1,0 +1,63 @@
+.line {
+    position: absolute;
+    top: 270px;
+    left: 19px;
+    background-position-x: 0px;
+    z-index: 3;
+}
+
+.facebook {
+    position: absolute;
+    top: 270px;
+    left: 73px;
+    background-position-x: 0px;
+    z-index: 3;
+}
+
+.playstore {
+    position: absolute;
+    top: 270px;
+    left: 127px;
+    background-position-x: 0px;
+    z-index: 3;
+}
+
+.messenger {
+    position: absolute;
+    top: 270px;
+    left: 181px;
+    background-position-x: 0px;
+    z-index: 3;
+}
+
+.whatsapp {
+    position: absolute;
+    top: 347px;
+    left: 73px;
+    background-position-x: 0px;
+    z-index: 3;
+}
+
+.bus {
+    position: absolute;
+    top: 347px;
+    left: 127px;
+    background-position-x: 0px;
+    z-index: 3;
+}
+
+.dcard {
+    position: absolute;
+    top: 347px;
+    left: 181px;
+    background-position-x: 0px;
+    z-index: 3;
+}
+
+.chrome {
+    position: absolute;
+    top: 438px;
+    left: 181px;
+    background-position-x: 0px;
+    z-index: 3;
+}
