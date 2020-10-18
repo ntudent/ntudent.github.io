@@ -1,0 +1,119 @@
+.time {
+    position: absolute;
+    top: -10px;
+    left: 0.6vh;
+    z-index: 3;
+}
+
+.upper {
+    height: 20px;
+    background-image: url(./icons/pic2.jpg);
+    background-position-y: -5px;
+    position: absolute;
+    top: 2px;
+    left: 35px;
+    z-index: 3;
+}
+
+.upper2 {
+    height: 20px;
+    background-image: url(./icons/pic3.jpg);
+    background-position-y: -5px;
+    position: absolute;
+    top: 2px;
+    left: 188px;
+    z-index: 3;
+}
+
+.lower {
+    width: 30px;
+    height: 15px;
+    background-image: url(./icons/pic4.jpg);
+    background-position-y: -5px;
+    position: absolute;
+    top: 415px;
+    left: 110px;
+    z-index: 3;
+}
+
+.style {
+    color: white;
+    font-size: 3px;
+    font-family: sans-serif;
+}
+
+.line_word {
+    position: absolute;
+    top: 305px;
+    left: 22.6px;
+    z-index: 3;
+}
+
+.facebook_word {
+    position: absolute;
+    top: 305px;
+    left: 60px;
+    z-index: 3;
+}
+
+.playstore_word {
+    position: absolute;
+    top: 305px;
+    left: 117px;
+    z-index: 3;
+}
+
+.messenger_word {
+    position: absolute;
+    top: 305px;
+    left: 175px;
+    z-index: 3;
+}
+
+.messenger_word2 {
+    position: absolute;
+    top: 317px;
+    left: 188px;
+}
+
+.whatsapp_word {
+    position: absolute;
+    top: 382px;
+    left: 60px;
+    z-index: 3;
+}
+
+.bus_word {
+    position: absolute;
+    top: 380px;
+    left: 120px;
+    z-index: 3;
+}
+
+.bus_word2 {
+    position: absolute;
+    top: 394px;
+    left: 138px;
+    z-index: 3;
+}
+
+.dcard_word {
+    position: absolute;
+    top: 383px;
+    left: 182px;
+    z-index: 3;
+}
+
+.settings_word {
+    position: absolute;
+    top: 228px;
+    left: 122px;
+    z-index: 3;
+}
+
+.calendar_word {
+    position: absolute;
+    top: 382px;
+    left: 8.5px;
+    z-index: 3;
+}
