@@ -7,7 +7,7 @@
 
 .upper {
     height: 20px;
-    background-image: url(./icons/pic2.jpg);
+    background-image: url(https://ntudent.github.io/109-1Frontend/HW2/icon/pic2.jpg);
     background-position-y: -5px;
     position: absolute;
     top: 2px;
@@ -17,7 +17,7 @@
 
 .upper2 {
     height: 20px;
-    background-image: url(./icons/pic3.jpg);
+    background-image: url(https://ntudent.github.io/109-1Frontend/HW2/icon/pic3.jpg);
     background-position-y: -5px;
     position: absolute;
     top: 2px;
@@ -28,7 +28,7 @@
 .lower {
     width: 30px;
     height: 15px;
-    background-image: url(./icons/pic4.jpg);
+    background-image: url(https://ntudent.github.io/109-1Frontend/HW2/icon/pic4.jpg);
     background-position-y: -5px;
     position: absolute;
     top: 415px;
