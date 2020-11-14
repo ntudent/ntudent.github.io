@@ -1,0 +1,156 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Noto Sans TC", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1.6;
+}
+
+#loader {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+
+}
+
+.loader {
+    z-index: 3;
+    color: rgb(230, 19, 124);
+    font-family: Noto Sans TC;
+    font-size: 50px;
+    text-decoration: aqua;
+    font-weight: normal;
+    font-style: normal;
+    float: left;
+    animation-name: show_loader;
+    -o-animation-name: show_loader;
+    -ms-animation-name: show_loader;
+    -webkit-animation-name: show_loader;
+    -moz-animation-name: show_loader;
+    animation-duration: 6s;
+    -o-animation-duration: 6s;
+    -ms-animation-duration: 6s;
+    -webkit-animation-duration: 6s;
+    -moz-animation-duration: 6s;
+    animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-direction: normal;
+    -o-animation-direction: normal;
+    -ms-animation-direction: normal;
+    -webkit-animation-direction: normal;
+    -moz-animation-direction: normal;
+}
+
+#loader1 {
+    position: absolute;
+    left: 40px;
+    animation-delay: 1s;
+    -o-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+}
+
+#loader2 {
+    position: absolute;
+    left: 100px;
+    animation-delay: 2s;
+    -o-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+}
+
+#loader3 {
+    position: absolute;
+    left: 160px;
+    animation-delay: 3s;
+    -o-animation-delay: 3s;
+    -ms-animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+}
+
+#loader4 {
+    position: absolute;
+    left: 220px;
+    animation-delay: 4s;
+    -o-animation-delay: 4s;
+    -ms-animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+}
+
+#loader5 {
+    position: absolute;
+    left: 280px;
+    animation-delay: 5s;
+    -o-animation-delay: 5s;
+    -ms-animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+}
+
+@keyframes show_loader {
+    0% {
+        color: rgb(51, 32, 221);
+    }
+
+    100% {
+        color: rgb(230, 19, 124);
+    }
+}
+
+.hover_contact:hover {
+    background-color: rgb(83, 52, 218);
+    border: yellow 1px solid;
+    color: rgb(47, 240, 47);
+}
+
+.hover_contact1:hover {
+    border: yellow 1px solid;
+    color: rgb(47, 240, 47);
+}
+
+.hover_exp:hover {
+    background-color: rgb(211, 76, 76);
+    border: yellow 1px solid;
+    color: rgb(54, 14, 199);
+}
+
+.hover_exp1:hover {
+    border: yellow 1px solid;
+    color: rgb(54, 14, 199);
+}
+
+.hover_list:hover {
+    /* 選單加上:hover陰影及從小圖變為大圖 */
+    background-color: lawngreen;
+    border-radius: 30px;
+    width: 120px;
+    box-shadow: 1px 1px 5px gold;
+    z-index: 10;
+}
+
+.hover_shadow:hover {
+    background-color: rgb(159, 218, 159);
+    box-shadow: 3px 3px 12px red;
+}
+
+.hover_index:hover {
+    background-color: rgb(159, 218, 159);
+    color: rgb(89, 22, 134);
+    text-decoration: none
+}
+
+.style_index {
+    color: rgb(71, 40, 184);
+    background-color: rgb(148, 156, 30);
+    border-radius: 20px;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.top_index {
+    border-top: 200px;
+}

@@ -1,0 +1,38 @@
+.menu {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(83, 52, 218);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#menuIntro {
+    position: absolute;
+    left: 200px;
+    top: 120px;
+
+}
+
+#menuExp {
+    position: absolute;
+    left: 450px;
+    top: 120px;
+}
+
+#menuFund {
+    position: absolute;
+    left: 700px;
+    top: 120px;
+}
+
+#menuContact {
+    position: absolute;
+    left: 950px;
+    top: 120px;
+}
+
+#search {
+    position: absolute;
+    left: 1050px;
+    top: 120px;
+}

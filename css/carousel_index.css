@@ -1,0 +1,16 @@
+.middle {
+    margin-left: 300px;
+    margin-right: 500px;
+    position: absolute;
+    left: 20px;
+    top: 120px;
+}
+
+.bigword {
+    position: absolute;
+    font-size: 30px;
+    left: 20px;
+    top: 200px;
+    color: white;
+
+}
