@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甫哥集資</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <link rel="stylesheet" href="./css/blocks.css">
+    <link rel="stylesheet" href="./css/menu.css">
+</head>
+<body>
+    <!-- 頭頂標題 -->
+    <div class="top" id="loader">
+        <div class="icon_1"><a href="./intro.html"><img src="./photo/1.png" width="100%" style="
+            border-radius: 50%;
+            border-style: solid;
+            border-color:rgb(89, 76, 212);
+            border-width: 3px;"></a></div>
+        <div class="themeColorFund"></div>
+        <div class="top_right"></div>
+         <div class="loader" id="loader1">甫</div>
+         <div class="loader" id="loader2">哥</div>
+         <div class="loader" id="loader3">後</div>
+         <div class="loader" id="loader4">援</div>
+         <div class="loader" id="loader5">會</div>
+    </div>
+
+    <!-- 選單 -->
+    <!-- intro:rgb(88, 218, 235) exp:rgb(211, 76, 76) fund:rgb(78, 218, 90) contact:rgb(83, 52, 218)-->
+    <div id="menuIntro"><a href="./intro.html"><img src="./photo/intro_other.png" style="border-radius: 50%;" width="120px"></a></div>
+    <div id="menuExp"><a href="./exp.html"><img src="./photo/exp_other.png" style="border-radius: 50%;" width="120px"></a></div>
+    <div id="menuFund"><a href="./fundraising.html"><img src="./photo/fundraising.png" style="border-radius: 50%;" width="150px"></a></div>
+    <div id="menuContact"><a href="./contact.html"><img src="./photo/contact_other.png" style="border-radius: 50%;" width="120px"></a></div>
+    
+      <div class="card mb-3" style="max-width: 1000px;">
+        <div class="row no-gutters" style="position: absolute; left: 100px; top: 300px;">
+          <div >
+            <img src="./photo/1.jpg" class="card-img" >
+          </div>
+          <div class="col col-12">
+            <div class="card-body" >
+              <h5 class="card-title">免費祈福 Free to Pray</h5>
+              <p class="card-text">集氣支持甫哥與後援會達成夢想!</p>
+              <p class="card-text">Together, turn our mind into energy.</p>
+              <p class="card-text"><small class="text-muted">進度: </small></p>
+              <p class="card-text"><small class="text-muted">Process: </small></p>
+                <a href="./pray.html" class="btn btn-primary " target="_blank">進入 Enter</a>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters" style="position: absolute; left: 600px; top: 300px;">
+            <div >
+              <img src="./photo/4.jpg" class="card-img" >
+            </div>
+            <div class="col col-12">
+              <div class="card-body" >
+                <h5 class="card-title">當個甫哥到山上診療的後援尖兵</h5>
+                <h5 class="card-title">Be a Supporter to My project of Surgery in Rural Areas</h5>
+                <p class="card-text">We, are fulfilling dreams of each other.</p>
+                <p class="card-text">我們，都在實現彼此</p>
+                <p class="card-text">We, are fulfilling dreams of each other.</p>
+                <p class="card-text"><small class="text-muted">進度: 0元/200萬元</small></p>
+                <p class="card-text"><small class="text-muted">Process: $0/ $2M</small></p>
+                  <a href="./fundraising_enter.html" class="btn btn-primary" target="_blank">進入 Enter</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    
+    <!-- 等到網站架上去後search後面接site: ，做成欄位-->
+    <button class="hover_shadow" style="position: absolute; top: 160px; left: 30px; border-color: rgb(89, 76, 212); border-radius: 10px;">搜尋<br>Searching</button>
+    <script>
+        const button = document.querySelector('button');
+
+        var search;
+        button.onclick = function() {
+            search = prompt('請輸入於下方   Pls enter below');
+            window.open("https://google.com/search?q="+search, "", "toolbar=no,location=no,directories=no,width=600,height=800");
+        }
+        
+    </script>
+
+    <!-- bootstrap連結 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+</body>
+</html>

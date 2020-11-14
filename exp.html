@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甫哥的經歷</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <link rel="stylesheet" href="./css/blocks.css">
+    <link rel="stylesheet" href="./css/menu.css">
+</head>
+<body>
+    <!-- 頭頂標題 -->
+    <div class="top" id="loader">
+        <div class="icon_1"><a href="./intro.html"><img src="./photo/1.png" width="100%" style="
+            border-radius: 50%;
+            border-style: solid;
+            border-color:rgb(89, 76, 212);
+            border-width: 3px;"></a></div>
+        <div class="themeColorExp"></div>
+        <div class="top_right"></div>
+         <div class="loader" id="loader1">甫</div>
+         <div class="loader" id="loader2">哥</div>
+         <div class="loader" id="loader3">後</div>
+         <div class="loader" id="loader4">援</div>
+         <div class="loader" id="loader5">會</div>
+    </div>
+
+    <!-- 選單 -->
+    <!-- intro:rgb(88, 218, 235) exp:rgb(211, 76, 76) fund:rgb(78, 218, 90) contact:rgb(83, 52, 218)-->
+    <div id="menuIntro" class="hover_list"><a href="./intro.html"><img src="./photo/intro_other.png" style="border-radius: 50%;" width="120px" class="hover_list_intro"></a></div>
+    <div id="menuExp"><a href="./exp.html"><img src="./photo/exp.png" style="border-radius: 50%;" width="150px"></a></div>
+    <div id="menuFund" class="hover_list"><a href="./fundraising.html"><img src="./photo/fundraising_other.png" style="border-radius: 50%;" width="120px"></a></div>
+    <div id="menuContact" class="hover_list"><a href="./contact.html"><img src="./photo/contact_other.png" style="border-radius: 50%;" width="120px"></a></div>
+    
+    <!-- 等到網站架上去後search後面接site: ，做成欄位-->
+    <button class="hover_shadow" style="position: absolute; top: 160px; left: 30px; border-color: rgb(89, 76, 212); border-radius: 10px;">搜尋<br>Searching</button>
+    <script>
+        const button = document.querySelector('button');
+
+        var search;
+        button.onclick = function() {
+            search = prompt('請輸入於下方   Pls enter below');
+            window.open("https://google.com/search?q="+search, "", "toolbar=no,location=no,directories=no,width=600,height=800");
+        }
+        
+    </script>
+
+    <!-- 側面選單 -->
+    <div class="list-group" style="position: absolute; top: 270px;">
+        <button type="button" class="list-group-item list-group-item-action active background hover_exp1" style="background-color:rgb(211, 76, 76);">成長背景<br>Background</button>
+        <button type="button" class="list-group-item list-group-item-action competition hover_exp">奧匹與物辯<br>Competitions</button>
+        <button type="button" class="list-group-item list-group-item-action studentassociation hover_exp">學生聯合自治會<br>Student Assocation</button>
+        <button type="button" class="list-group-item list-group-item-action scienceexhibition hover_exp">科展與國際交流<br>Science exchanging</button>
+        <button type="button" class="list-group-item list-group-item-action workandskill hover_exp">工作與技能<br>Works and Skills</button>
+        <button type="button" class="list-group-item list-group-item-action thought hover_exp">想法合輯<br>Thoughts</button>
+        <button type="button" class="list-group-item list-group-item-action" disabled>企業<br>Enterprises</button>
+      </div>
+    <section style="position: absolute; top: 300px; left: 220px;"><iframe src="./exp/background.html" frameborder="no" style="height: 400px; width: 1000px; border-width: 0%;"></iframe></section>
+
+    <!-- bootstrap連結 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+    <!-- 連到JS -->
+    <script src="./js/exp.js"></script>
+</body>
+</html>
