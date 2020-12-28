@@ -1,0 +1,23 @@
+.middle {
+    position: absolute;
+    left: 400px;
+    right: auto;
+    top: 170px;
+}
+
+.middle_button {
+    position: absolute;
+    left: 450px;
+    right: auto;
+    top: 300px;
+}
+
+.leave:hover {
+    background-color: rgb(216, 42, 178);
+    color: yellow;
+}
+
+.enter:hover {
+    background-color: red;
+    color: blue;
+}
