@@ -1,0 +1,13 @@
+.img {
+    background-image: url(../img/me.jpeg);
+    background-position-x: -150px;
+    background-position-y: -100px;
+    width: 40px;
+    height: 60px;
+}
+
+.red:hover {
+    color: yellow;
+    background-color: violet;
+    border-color: violet;
+}
