@@ -271,7 +271,7 @@ $(() => {
     })
 
     $('#lastChallenge').on('click', () => {
-        window.open('../index2.html')
+        window.open('https://ntudent.github.io/final/index2.html')
         //window.parent.close()
     })
 
