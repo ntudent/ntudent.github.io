@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二關:電流急急棒</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    
+
+</head>
+<body>
+    <p>幸運是不會自己從天上掉下來的</p>
+    <p>但荊棘卻會滿布於你眼前</p>
+    <p>你，還有</p>
+    <h1 id="chanceGame03" style="color: red;">5</h1>
+    <p>次機會</p>
+    <svg id="electric" height="400" width="950" class="left_block">
+        <g class="snake">
+            <line x1="0" y1="200" x2="0" y2="400" />
+            <line x1="950" y1="0" x2="950" y2="400" />
+            <line x1="950" y1="0" x2="40" y2="200" />
+            <polyline points="40,200 40,350 900,350 900,70 90,230 90,300" />
+            <polyline points="90,300 850,300 850,130 190,255 800,250 800,190" />
+            <line x1="750" y1="150" x2="750" y2="210" />
+            <line x1="700" y1="250" x2="700" y2="200" />
+            <line x1="600" y1="180" x2="650" y2="210" />
+            <line x1="600" y1="230" x2="650" y2="250" />
+        </g>   
+    </svg>
+
+    <button id="toGame03" class="toGame03 buttonAll" >下一關</button>
+
+    <!-- bootstrap連結 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+    
+    <!-- 連到JS -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

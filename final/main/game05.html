@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第五關:階級的固化</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/game05.css">
+
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+    <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+    <div id="draggableTrue" class="draggable ui-widget-content" style="width: 300px; border: none; z-index: 1;">
+        <p>還是想打破階級嗎?</p>
+        <p>那就試著投出你手中握有的球吧</p>
+    </div>
+    
+    <div id="containment-wrapper" class="groundLevel" style="position: absolute;top: 100px;left: 0px;height: 300px;width: 1000px;border: solid;border-color: blue;border-width: 3px;">
+        <div id="draggableIn" class="draggable ui-widget-content move" style="border-radius: 50%;">
+            <br><p> 投出我吧</p>
+        </div>
+    </div>
+       
+    
+    <button id="toFinal" class="buttonAll" style="position: absolute; left: 20px; top: 10px; z-index: 0;">到達?</button>
+    
+
+
+    <!-- bootstrap連結
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script> -->
+    
+    <!-- 連到JS -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
