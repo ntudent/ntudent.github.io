@@ -11,33 +11,36 @@ $(() => {
             // window.close()
             clearInterval(interval)
             $('#Enter').hide()
-            let $button = $('<button>')
-            $button.addClass('goBack').addClass('.button').text('回去吧').appendTo('#countDown')
+            $('#countDownOver').show()
         }
     }, 1000)
 
-    $('.goBack').on('click', () => {
+    $('#countDownOver').on('click', () => {
         console.log('1')
         window.open('../index.html')
         window.close()
     })
 
     var data = 0 //遊戲次數
+    $('#Enter').on('click', () => {
+        console.log(++data)
+        if (data == 5) {
+            alert("5次失敗了，，，年輕人......回去吧。。。")
+            data = 0
+            window.close()
+            return
+        }
+    })
 
     $('#Enter').on('click', () => {
         time = 20
         document.documentElement.style.setProperty('--top', `100px`)
         $('#countDown').text(time)
-        if (data ++ > 5) {
-            alert("失敗了，，，年輕人......回去吧。。。")
-            window.close()
-        }
-        //如果猜太多次，關閉視窗
 
         let age = $('#inputAge').val()
         let number = $('#inputNumber').val()
         if (number > 100 || number < 1) {
-            $('output').text() = console.log(number)
+            $('#output').val(number)
             return
         }
         //取出輸入資料
@@ -48,16 +51,19 @@ $(() => {
         let standard = Math.floor( Math.random() * f)
         //亂數設定遊戲比較基準值
 
-        let game = age + number
+        let game = parseInt(age) + parseInt(number)
         //設定遊戲值
 
-        if (game >= standard) {
+        console.log('standard = ' + standard)
+        console.log('game = ' + game)
+
+        if (game <= standard) {
             window.open('./main.html')
         } else {
-            $input = $('<input>').text('再試試看啊哈')
+            $input = $('<input>').val('再試試看啊哈')
             $('#output').append($input)
         }
-        // 依照年齡，玩猜數字
+        //依照年齡，玩猜數字
 
     })
         
