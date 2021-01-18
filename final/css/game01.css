@@ -1,0 +1,105 @@
+#p1 {
+    background-image: url(../img/p1.png);
+    position: absolute;
+    top: 230px;
+    left: 0px;
+    height: 305px;
+    width: 200px;
+    z-index: 1;
+}
+
+#p1:hover {
+    background-image: url(../img/p1_click.png);
+    position: absolute;
+    top: 230px;
+    left: 0px;
+    height: 305px;
+    width: 200px;
+    z-index: 2;
+}
+
+#p2 {
+    background-image: url(../img/p2.png);
+    position: absolute;
+    top: 230px;
+    left: 200px;
+    height: 305px;
+    width: 200px;
+    z-index: 1;
+}
+
+#p2:hover {
+    background-image: url(../img/p2_click.png);
+    position: absolute;
+    top: 230px;
+    left: 200px;
+    height: 305px;
+    width: 200px;
+    z-index: 2;
+}
+
+#p3 {
+    background-image: url(../img/p3.png);
+    position: absolute;
+    top: 230px;
+    left: 400px;
+    height: 305px;
+    width: 200px;
+    z-index: 1;
+}
+
+#p3:hover {
+    background-image: url(../img/p3_click.png);
+    position: absolute;
+    top: 230px;
+    left: 400px;
+    height: 305px;
+    width: 200px;
+    z-index: 2;
+}
+
+#p4 {
+    background-image: url(../img/p4.png);
+    position: absolute;
+    top: 230px;
+    left: 600px;
+    height: 305px;
+    width: 200px;
+    z-index: 1;
+}
+
+#p4:hover {
+    background-image: url(../img/p4_click.png);
+    position: absolute;
+    top: 230px;
+    left: 600px;
+    height: 305px;
+    width: 200px;
+    z-index: 2;
+}
+
+#p5 {
+    background-image: url(../img/p5.png);
+    position: absolute;
+    top: 230px;
+    left: 800px;
+    height: 305px;
+    width: 200px;
+    z-index: 1;
+}
+
+#p5:hover {
+    background-image: url(../img/p5_click.png);
+    position: absolute;
+    top: 230px;
+    left: 800px;
+    height: 305px;
+    width: 200px;
+    z-index: 2;
+    /* border: yellow 1px solid; */
+}
+
+.word_game01 {
+    position: absolute;
+    top: 200px;
+}
