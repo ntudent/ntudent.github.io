@@ -19,4 +19,7 @@ $(() => {
         $('iframe').attr("src", "./contact/sponsorandcooperate.html")
     })
 
+     $('#final').on('click', () => {
+        window.open('https://ntudent.github.io/final/')
+    })
 })
