@@ -1,87 +1,65 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>勇者表單</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
-
-    <!-- Bootstrap core CSS -->
-    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-    .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-    }
-
-    @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-        font-size: 3.5rem;
+$(() => {
+    var time = 0
+    var interval = window.setInterval(() => {
+        time = +$('#countDown').text() - 1
+        const root = document.documentElement
+        root.style.setProperty('--top', `${time * 5}px`)
+        $('#countDown').text(time)
+        if (time <= 0) {
+            // 時間到了，顯示遊戲失敗
+            // alert('混沌No.0 : 回去吧，孩子')
+            // window.close()
+            clearInterval(interval)
+            $('#Enter').hide()
+            let $button = $('<button>')
+            $button.addClass('goBack').addClass('.button').text('回去吧').appendTo('#countDown')
         }
-    }
-    </style>
+    }, 1000)
 
+    $('.goBack').on('click', () => {
+        console.log('1')
+        window.open('../index.html')
+        window.close()
+    })
 
-    <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/form.css">
+    var data = 0 //遊戲次數
 
-</head>
-<body class="text-center">
-    <main class="form-signin">
+    $('#Enter').on('click', () => {
+        time = 20
+        document.documentElement.style.setProperty('--top', `100px`)
+        $('#countDown').text(time)
+        if (data ++ > 5) {
+            alert("失敗了，，，年輕人......回去吧。。。")
+            window.close()
+        }
+        //如果猜太多次，關閉視窗
+
+        let age = $('#inputAge').val()
+        let number = $('#inputNumber').val()
+        if (number > 100 || number < 1) {
+            $('output').text() = console.log(number)
+            return
+        }
+        //取出輸入資料
+
+        let f = (number <= 100 && number >= 0) ? number * 2 : 200
+        //設定輸入上下界
+
+        let standard = Math.floor( Math.random() * f)
+        //亂數設定遊戲比較基準值
+
+        let game = age + number
+        //設定遊戲值
+
+        if (game >= standard) {
+            window.open('./main.html')
+        } else {
+            $input = $('<input>').text('再試試看啊哈')
+            $('#output').append($input)
+        }
+        // 依照年齡，玩猜數字
+
+    })
         
-          <img class="mb-4" src="./img/me.jpeg"" alt="" width="42" height="57">
-          <h1 class="h3 mb-3 fw-normal">這是條沒有退路的旅程...</h1>
-          <h1 class="h6 mb-5 fw-normal">You will be NO chance to go BACK!!</h1>
-          <div id="countDown" class="bar" style="position: absolute; left: 100px; font-size: 40px;">20</div>
-          <div class="form-group">
-              <div class="row">
-                  <div class="col-4 text-center">
-                      <label for="inputAge">你的年齡</label>
-                  </div>
-                  <div class="col-8">
-                      <input type="text" id="inputAge" class="form-control" placeholder="呵呵天知道你多大了" required autofocus>
-                  </div>
-              </div>
-          </div>
-          <br>
-          <div class="form-group">
-            <div class="row">
-                <div class="col-6 text-center">
-                    <label for="inputNumber">1到100選一個數字</label>
-                </div>
-                <div class="col-6">
-                    <input type="text" id="inputNumber" class="form-control" placeholder="答對才能進去喔" required autofocus>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="form-group mt-2 mb-2">
-            <div class="row">
-              <div class="col-3 text-center">
-                <label for="inputNumber">number</label>
-              </div>
-              <div class="col-9">
-                <input type="text" id="output" class="form-control"></div>
-            </div>
-          </div>
-          <br>  
-          <button class="w-100 btn btn-lg btn-primary red" type="button" id="Enter">啟程</button>
-          
-          <p class="mt-5 mb-3 text-muted">&copy; 2020 蔡侁甫 Dept. of Dentistry, NTU</p>
-        
-      </main>
-    
-    <!-- 記得這下面 -->
-    <script src="./assets/jquery-3.5.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
-    <!-- 連到JS -->
-    <script src="./js/form.js"></script>
-</body>
-</html>
+})
