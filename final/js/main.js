@@ -271,7 +271,7 @@ $(() => {
     })
 
     $('#lastChallenge').on('click', () => {
-        window.open('https://ntudent.github.io/final/index2.html')
+        window.open('../index2.html')
         //window.parent.close()
     })
 
@@ -661,15 +661,36 @@ $(() => {
         v_x = (parseInt(x2)-parseInt(x1)) * 1000 / (parseInt(t2)-parseInt(t1))
         v_y = (parseInt(y2)-parseInt(y1)) * 1000 / (parseInt(t2)-parseInt(t1))
         // console.log(v_x + ' ' + v_y)
-        var dragTime = 0, dt = 0.05, x_pos = 0
+        var dragTime = 0, dt = 0.05, x_pos = 0, y_pos = 0
         var int = setInterval(() => {
             dragTime ++
-            x_pos = parseInt(x2) + parseFloat(v_x) * parseFloat(dt) * parseFloat(dragTime)
-            x_pos = parseInt(x_pos)
-            const root_x = document.documentElement
-            root_x.style.setProperty('--left', `${x_pos}px`)
+            x_pos = parseInt(x2) + parseFloat(v_x) * parseFloat(dt)
+            y_pos = parseInt(y2) + parseFloat(v_y) * parseFloat(dt) + 0.2 * parseFloat(dragTime)
+            x2 = parseInt(x_pos)
+            y2 = parseInt(y_pos)
+            v_x -= 10
+            v_y += 100
+            $('#draggableIn').offset({top:y2, left:x2})
+            // const root_x = document.documentElement
+            // root_x.style.setProperty('--left', `${x_pos}px`)
             console.log(x_pos)
-            if (x_pos >= 1000 || x_pos <= 0) {
+            if (x_pos >= 900) {
+                $('#draggableIn').offset({left:900})
+                clearInterval(int)
+                return
+            }
+            if (x_pos <= 50) {
+                $('#draggableIn').offset({left:50})
+                clearInterval(int)
+                return
+            }
+            if (y_pos >= 300) {
+                $('#draggableIn').offset({top:300})
+                clearInterval(int)
+                return
+            }
+            if (y_pos <= 100) {
+                $('#draggableIn').offset({top:110})
                 clearInterval(int)
                 return
             }
