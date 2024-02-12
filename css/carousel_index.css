@@ -1,10 +1,15 @@
-.middle {
-    margin-left: 300px;
-    margin-right: 500px;
-    position: absolute;
-    left: 20px;
-    top: 120px;
+.column {
+    display: flex;
+    width: 50%;
+
 }
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 .bigword {
     position: absolute;
