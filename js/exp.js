@@ -3,23 +3,20 @@ $(() => {
         $('iframe').attr("src", "./exp/background.html")
     })
 
-    $('.competition').on('click', () => {
-        $('iframe').attr("src", "./exp/competition.html")
+    $('.science').on('click', () => {
+        $('iframe').attr("src", "./exp/science.html")
     })
 
-    $('.scienceexhibition').on('click', () => {
-        $('iframe').attr("src", "./exp/scienceexhibition.html")
+    $('.society').on('click', () => {
+        $('iframe').attr("src", "./exp/society.html")
     })
 
-    $('.studentassociation').on('click', () => {
-        $('iframe').attr("src", "./exp/studentassociation.html")
+    $('.dentistry').on('click', () => {
+        $('iframe').attr("src", "./exp/dentistry.html")
     })
 
     $('.thought').on('click', () => {
         $('iframe').attr("src", "./exp/thought.html")
     })
 
-    $('.workandskill').on('click', () => {
-        $('iframe').attr("src", "./exp/workandskill.html")
-    })
 })
