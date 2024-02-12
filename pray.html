@@ -38,10 +38,10 @@
     
     <!-- 按鈕計數祈福 Happygoluckyface -->
     <div style="position: absolute; top: 355px; left: 100px;" id="count">
-        <a class="btn btn-secondary large" style="height: 300px; width: 400px; font-size: 80px;">祈福<br>Pray</a>
+        <a class="btn btn-secondary large" style="color: pink; height: 300px; width: 400px; font-size: 50px;">祈福<br>Click to Pray</a>
     </div>
 
-    <button style="position: absolute; top: 290px; left: 230px; border-color: rgb(89, 76, 212); border-radius: 10px;">輸入您的姓名<br>Enter your name.</button>
+    <button style="position: absolute; top: 290px; left: 230px; border-color: gray; border-radius: 10px;">先輸入您的姓名<br>Enter your name first.</button>
     <script>
         const button = document.querySelector('button');
 
@@ -58,10 +58,10 @@
             b += 1;
             alert(name + "祈福了   " + ++a + "   次\n" + name + " has prayed for   " + a + "   times");
             if (b === 8) {
-                alert("加油，每祈福10次有獎品\n"+"Cheers, there's prizes praying for every 10 times!")
+                alert("加油，每祈福10次有獎品\n"+"Cheers, awards for praying every 10 times!")
             }
             if (b === 10) {
-                let q = prompt("猜猜獎品\n" + "Guess the prize!");
+                let q = prompt("猜猜獎品\n" + "Guess the awards!");
                 if (q === 'null') {
                     alert("恭喜得獎\n"+"You win that!");
                 }
